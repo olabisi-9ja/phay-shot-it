@@ -10,8 +10,8 @@ import { scrollToTarget } from "@/components/SmoothScroll";
 function Marquee() {
   const phrase = (
     <>
-      AVAILABLE FOR ASSIGNMENTS <b>●</b> WORLDWIDE <b>●</b> PRINTS ON REQUEST <b>●</b>{" "}
-      WEDDINGS THAT FEEL LIKE STREETS <b>●</b>{" "}
+      BOOKINGS OPEN <b>●</b> LAGOS &amp; ILORIN <b>●</b> CONVOCATION · BRANDS · EVENTS <b>●</b>{" "}
+      WHATSAPP — 0805 316 5862 <b>●</b>{" "}
     </>
   );
   return (
@@ -76,8 +76,8 @@ export default function Footer() {
   return (
     <footer className="sec sec--dark footer" id="contact" ref={rootRef} aria-label="Contact">
       <div className="sec__head">
-        <span className="u-kicker">10 — CONTACT</span>
-        <span className="u-mono">NO PACKAGES PDF — JUST A CONVERSATION</span>
+        <span className="u-kicker">11 — CONTACT</span>
+        <span className="u-mono">BOOKINGS OPEN — LET&apos;S MAKE MEMORIES LAST</span>
       </div>
 
       <h2 className="footer__mega">
@@ -108,6 +108,14 @@ export default function Footer() {
           <p className="v">
             <a href={SITE.instagramUrl} target="_blank" rel="noopener noreferrer">
               Instagram — {SITE.instagram}
+            </a>
+            <br />
+            <a href={SITE.tiktokUrl} target="_blank" rel="noopener noreferrer">
+              TikTok — {SITE.tiktok}
+            </a>
+            <br />
+            <a href={SITE.whatsappUrl} target="_blank" rel="noopener noreferrer">
+              WhatsApp — {SITE.whatsapp}
             </a>
             <br />
             <a href={`mailto:${SITE.email}`}>Email — {SITE.email}</a>

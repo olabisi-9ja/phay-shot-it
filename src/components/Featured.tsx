@@ -5,7 +5,7 @@ import { gsap } from "@/lib/gsap";
 import { useIsoLayoutEffect } from "@/hooks/useIsoLayoutEffect";
 import { PHOTOS } from "@/lib/catalog";
 import { prefersReducedMotion } from "@/lib/motion";
-import Photo, { ExifChips } from "@/components/Photo";
+import Photo from "@/components/Photo";
 import { useLightbox } from "@/components/Lightbox";
 
 const PHOTO = PHOTOS.shrine;
@@ -88,9 +88,6 @@ export default function Featured() {
             </p>
             <h2 className="peak__title">{PHOTO.title}</h2>
             <p className="peak__sub serif-i">the Shrine, two fourteen in the morning</p>
-          </div>
-          <div className="peak__chips">
-            <ExifChips photo={PHOTO} />
           </div>
         </div>
       </div>

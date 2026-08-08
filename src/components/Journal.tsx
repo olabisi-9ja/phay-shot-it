@@ -34,7 +34,7 @@ export default function Journal() {
   return (
     <section className="sec journal" id="journal" ref={rootRef} aria-label="Journal">
       <div className="sec__head">
-        <span className="u-kicker">09 — JOURNAL</span>
+        <span className="u-kicker">10 — JOURNAL</span>
         <span className="u-mono">NOTES FROM THE FIELD</span>
       </div>
 

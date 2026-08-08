@@ -10,7 +10,7 @@ import { useLightbox } from "@/components/Lightbox";
 
 /**
  * Field map — geography as navigation (Playbook §12).
- * An abstract graticule, five cities, and the route a life on film takes.
+ * An abstract graticule, two Nigerian bases, and the short route between them.
  * Hover a pip to preview; open its archive with a click.
  */
 export default function FieldMap() {
@@ -49,8 +49,8 @@ export default function FieldMap() {
     return () => ctx.revert();
   }, []);
 
-  // route through the journey in time order: LA → Lagos → Sahara → Paris → Tokyo
-  const routeOrder = ["los-angeles", "lagos", "sahara", "paris", "tokyo"];
+  // the short route between the two bases: Lagos ⇄ Ilorin
+  const routeOrder = ["lagos", "ilorin"];
   const nodeById = Object.fromEntries(MAP_NODES.map((n) => [n.id, n]));
   const routePts = routeOrder.map((id) => nodeById[id]).filter(Boolean);
 
@@ -127,9 +127,9 @@ export default function FieldMap() {
       </div>
 
       <div className="map__legend u-mono">
-        <span>HOME BASE — LAGOS</span>
-        <span>ROUTE TAKEN 2025 → 2026</span>
-        <span>NEXT ─── UNDEVELOPED</span>
+        <span>HOME BASES — LAGOS &amp; ILORIN</span>
+        <span>LAGOS ⇄ ILORIN</span>
+        <span>ALL SHOTS MADE IN NIGERIA</span>
       </div>
     </section>
   );

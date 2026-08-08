@@ -64,7 +64,7 @@ export default function Intro() {
           </p>
           <ul className="intro__stats" role="list">
             <li><span>YEARS SHOOTING</span><b>08</b></li>
-            <li><span>COUNTRIES</span><b>14</b></li>
+            <li><span>CITIES</span><b>02 — LAGOS &amp; ILORIN</b></li>
             <li><span>ROLLS DEVELOPED</span><b>316 +</b></li>
             <li><span>CAMERAS LOST TO RAIN</span><b>02</b></li>
           </ul>

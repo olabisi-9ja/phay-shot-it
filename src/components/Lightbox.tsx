@@ -105,10 +105,7 @@ export function LightboxProvider({ children }: { children: React.ReactNode }) {
               />
             </div>
             <div className="lb__cap">
-              <span className="t">{photo.title}</span>
-              <span className="exif">
-                {photo.location} — {photo.lens} {photo.aperture} {photo.shutter} ISO {photo.iso} — {photo.film}
-              </span>
+              <span className="exif">{photo.date}</span>
             </div>
             {state.photos.length > 1 && (
               <>

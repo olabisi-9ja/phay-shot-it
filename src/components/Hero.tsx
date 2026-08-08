@@ -89,13 +89,6 @@ export default function Hero() {
               <span className="row"><span className="inner remains">remains.</span></span>
             </h1>
           </div>
-          <div className="hero__meta u-mono rev-fade">
-            <span>{PHOTO.camera}</span>
-            <span>
-              <b>{PHOTO.lens} {PHOTO.aperture}</b> {PHOTO.shutter} ISO {PHOTO.iso}
-            </span>
-            <span>{PHOTO.film}</span>
-          </div>
         </div>
       </div>
 

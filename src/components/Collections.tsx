@@ -180,9 +180,7 @@ function CollectionOverlay({
                 <Photo photo={p} sizes="(max-height: 760px) 80vw, 66vh" />
                 <figcaption className="col__cap">
                   <span className="t">{p.title}</span>
-                  <span className="m">
-                    {p.location} — {p.lens} {p.aperture} {p.shutter} ISO {p.iso}
-                  </span>
+                  <span className="m">{p.date}</span>
                 </figcaption>
               </figure>
             ))}

@@ -11,11 +11,11 @@ import Photo from "@/components/Photo";
 
 const MENU_ITEMS = [
   { label: "WORK", target: "#work", note: "four shelves", thumb: PHOTOS.studioRed },
-  { label: "ARCHIVE", target: "#archive", note: "a room of frames", thumb: PHOTOS.spiral },
+  { label: "ARCHIVE", target: "#archive", note: "a room of frames", thumb: PHOTOS.lagoon },
   { label: "STORY", target: "#story", note: "lagos, after midnight", thumb: PHOTOS.heroRain },
-  { label: "MAP", target: "#map", note: "where the negatives live", thumb: PHOTOS.tokyo },
-  { label: "ABOUT", target: "#about", note: "the hand that holds it", thumb: PHOTOS.adaeze },
-  { label: "JOURNAL", target: "#journal", note: "notes from the field", thumb: PHOTOS.bokeh },
+  { label: "MAP", target: "#map", note: "where the negatives live", thumb: PHOTOS.shrine },
+  { label: "ARTIST", target: "#about", note: "the eye behind it", thumb: PHOTOS.adaeze },
+  { label: "JOURNAL", target: "#journal", note: "notes from the field", thumb: PHOTOS.rainReflections },
   { label: "CONTACT", target: "#contact", note: "let's make something", thumb: PHOTOS.lagoon },
 ];
 
