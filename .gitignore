@@ -1,0 +1,28 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# generated master art (kept out of git; web-ready derivations live in /public/images)
+/art/
+
+# raw image-search scratch (see CREDITS.md for what was actually kept)
+/image-search/
+
+# tooling scratch
+/tools/shot/
+
+# misc
+.DS_Store
+*.pem
+.env*
+!.env.example
+*.tsbuildinfo
+next-env.d.ts
