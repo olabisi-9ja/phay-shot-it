@@ -2653,3 +2653,32 @@ html.anim-ready .rev-fade {
     padding: 4px !important;
   }
 }
+
+/* ——— MOBILE MENU FIXES ——— */
+@media (max-width: 720px) {
+  .menu {
+    justify-content: flex-start;
+    padding-top: calc(var(--nav-h) + 16px);
+    overflow-y: auto;
+    padding-bottom: 40px;
+  }
+  .menu__item {
+    padding: 12px 0;
+    gap: 12px;
+  }
+  .menu__item .word {
+    font-size: clamp(32px, 10vw, 42px) !important;
+  }
+  .menu__item .serif-i {
+    font-size: 13px !important;
+    text-align: right;
+    max-width: 110px;
+  }
+  .menu__foot {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    margin-top: 24px;
+    text-align: center;
+  }
+}
