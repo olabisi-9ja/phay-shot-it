@@ -10,8 +10,6 @@ import { PHOTOS } from "@/lib/catalog";
 import Photo from "@/components/Photo";
 
 const MENU_ITEMS = [
-  { label: "WORK", target: "#work", note: "four shelves", thumb: PHOTOS.studioRed },
-  { label: "ARCHIVE", target: "#archive", note: "a room of frames", thumb: PHOTOS.lagoon },
   { label: "STORY", target: "#story", note: "lagos, after midnight", thumb: PHOTOS.heroRain },
   { label: "MAP", target: "#map", note: "where the negatives live", thumb: PHOTOS.shrine },
   { label: "ARTIST", target: "#about", note: "the eye behind it", thumb: PHOTOS.adaeze },

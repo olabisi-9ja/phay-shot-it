@@ -62,12 +62,6 @@ export default function Intro() {
             to scroll past, but a darkroom, an archive and a walk home at midnight. Every frame
             here is an object with a history — its light, its coordinates, its second of time.
           </p>
-          <ul className="intro__stats" role="list">
-            <li><span>YEARS SHOOTING</span><b>08</b></li>
-            <li><span>CITIES</span><b>02 — LAGOS &amp; ILORIN</b></li>
-            <li><span>ROLLS DEVELOPED</span><b>316 +</b></li>
-            <li><span>CAMERAS LOST TO RAIN</span><b>02</b></li>
-          </ul>
         </div>
       </div>
     </section>

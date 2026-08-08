@@ -53,7 +53,7 @@ export default function About() {
   return (
     <section className="sec sec--light about" id="about" ref={rootRef} aria-label="About the artist">
       <div className="sec__head">
-        <span className="u-kicker">08 — THE ARTIST</span>
+        <span className="u-kicker">06 — THE ARTIST</span>
         <span className="u-mono">HUMAN, NOT A FEED</span>
       </div>
 

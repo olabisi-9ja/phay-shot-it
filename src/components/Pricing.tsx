@@ -116,7 +116,7 @@ export default function Pricing() {
   return (
     <section className="sec sec--light2 price" id="pricing" ref={rootRef} aria-label="Pricing">
       <div className="sec__head">
-        <span className="u-kicker">09 — PRICING</span>
+        <span className="u-kicker">07 — PRICING</span>
         <span className="u-mono">RATE CARD — 2026</span>
       </div>
 

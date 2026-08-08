@@ -1,8 +1,6 @@
 import Hero from "@/components/Hero";
 import Intro from "@/components/Intro";
 import Featured from "@/components/Featured";
-import Collections from "@/components/Collections";
-import SpatialGallery from "@/components/SpatialGallery";
 import Stories from "@/components/Stories";
 import FieldMap from "@/components/FieldMap";
 import About from "@/components/About";
@@ -17,8 +15,6 @@ export default function Home() {
       <Hero />
       <Intro />
       <Featured />
-      <Collections />
-      <SpatialGallery />
       <Stories />
       <FieldMap />
       <About />

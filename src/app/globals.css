@@ -311,17 +311,18 @@ a {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 120;
+  z-index: 210;
   pointer-events: none;
-  mix-blend-mode: difference;
   will-change: transform;
 }
 .cursor__dot {
-  width: 8px;
-  height: 8px;
-  margin: -4px 0 0 -4px;
+  width: 11px;
+  height: 11px;
+  margin: -5.5px 0 0 -5.5px;
   background: #fff;
+  border: 2px solid rgba(0, 0, 0, 0.6);
   border-radius: 50%;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.35);
   transition: transform 0.35s var(--ease-out), opacity 0.25s;
 }
 .cursor__label {
