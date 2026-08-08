@@ -2546,3 +2546,23 @@ html.anim-ready .rev-fade {
 .pricing__book-btn:hover {
   transform: translateY(-2px);
 }
+
+
+.floating-book {
+  position: fixed;
+  bottom: clamp(16px, 3vh, 32px);
+  left: clamp(16px, 3vw, 32px);
+  background: var(--accent);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 100px;
+  text-decoration: none;
+  font-weight: 700;
+  z-index: 90;
+  transition: transform 0.2s var(--ease-out), filter 0.2s;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+}
+.floating-book:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.1);
+}

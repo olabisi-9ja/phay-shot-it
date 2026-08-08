@@ -109,18 +109,10 @@ export default function Nav() {
             <circle cx="12" cy="12" r="9" />
             <path d="M12 3 L15 12 M21 12 L12 15 M12 21 L9 12 M3 12 L12 9" />
           </svg>
-          {SITE.name}
+          PHAY
         </a>
         <LagosClock />
         <div className="nav__right">
-          <a
-            href={`https://wa.me/2348053165862?text=${encodeURIComponent("Hi Phay, I'd like to book a shoot.")}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="nav__book u-mono"
-          >
-            BOOK A SHOOT
-          </a>
           <button
             className={`nav__sound u-mono${soundOn ? " is-on" : ""}`}
             onClick={() => setSoundOn(toggleAmbience())}
@@ -180,6 +172,14 @@ export default function Nav() {
           </span>
         </div>
       </nav>
+      <a
+        href={`https://wa.me/2348053165862?text=${encodeURIComponent("Hi Phay, I'd like to book a shoot.")}`}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="floating-book u-mono"
+      >
+        BOOK A SHOOT
+      </a>
     </>
   );
 }
