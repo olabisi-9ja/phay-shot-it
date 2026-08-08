@@ -124,14 +124,25 @@ export default function Footer() {
       </div>
 
       {/* --- bottom bar --- */}
-      <div className="footer__bar">
+      <div className="footer__bar" style={{ paddingBottom: "16px" }}>
         <span>© 2026 {SITE.legalName}</span>
-        <span className="footer__watermark" style={{ textAlign: "center" }}>
-          Made with 💜 by <a href="https://olabisiadigun.xyz" target="_blank" rel="noopener noreferrer" className="u-mono" style={{ textDecoration: "underline" }}>O L A B I S I</a>
-        </span>
         <button className="footer__top-link u-mono" onClick={() => scrollToTarget(0)} data-cursor="TOP">
           BACK TO THE FIRST FRAME ↑
         </button>
+      </div>
+
+      <div 
+        className="footer__watermark u-mono" 
+        style={{ 
+          textAlign: "center", 
+          padding: "16px var(--gutter) 26px", 
+          fontSize: "9.5px", 
+          letterSpacing: "0.14em", 
+          color: "var(--muted-d)",
+          borderTop: "1px solid var(--line-d)"
+        }}
+      >
+        Made with 💜 by <a href="https://olabisiadigun.xyz" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "underline", color: "rgba(255, 255, 255, 0.85)" }}>O L A B I S I</a>
       </div>
     </footer>
   );
