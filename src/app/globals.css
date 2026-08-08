@@ -534,8 +534,17 @@ html.js .loader {
   background: currentColor;
 }
 @media (max-width: 720px) {
+  :root {
+    --nav-h: 56px;
+  }
   .nav__clock {
     display: none;
+  }
+  .nav__sound {
+    display: none;
+  }
+  .nav__brand {
+    font-size: 15px;
   }
 }
 
