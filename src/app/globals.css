@@ -534,17 +534,8 @@ html.js .loader {
   background: currentColor;
 }
 @media (max-width: 720px) {
-  :root {
-    --nav-h: 56px;
-  }
   .nav__clock {
     display: none;
-  }
-  .nav__sound {
-    display: none;
-  }
-  .nav__brand {
-    font-size: 15px;
   }
 }
 
@@ -2574,4 +2565,39 @@ html.anim-ready .rev-fade {
 .floating-book:hover {
   transform: translateY(-2px);
   filter: brightness(1.1);
+}
+
+
+/* Mobile Nav Fixes */
+@media (max-width: 720px) {
+  .nav {
+    height: 56px;
+    padding: 0 clamp(12px, 3vw, 20px);
+  }
+  .nav__brand {
+    font-size: 13.5px;
+    gap: 6px;
+  }
+  .nav__brand svg {
+    width: 14px;
+    height: 14px;
+  }
+  .nav__right {
+    gap: 12px;
+  }
+  .nav__sound, .nav__index {
+    font-size: 9px;
+    letter-spacing: 0.1em;
+  }
+  .nav__sound-bars {
+    gap: 1.5px;
+  }
+  .nav__sound-bars i {
+    width: 1.5px;
+  }
+  .footer__bar {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
 }
