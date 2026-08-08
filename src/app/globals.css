@@ -311,10 +311,9 @@ a {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 120;
+  z-index: 9999;
   pointer-events: none;
   mix-blend-mode: difference;
-  will-change: transform;
 }
 .cursor__dot {
   width: 8px;
