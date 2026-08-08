@@ -9,7 +9,7 @@ import { prefersReducedMotion } from "@/lib/motion";
 import Photo from "@/components/Photo";
 
 /**
- * Collections — not cards: an index of shelves (Playbook §26.04).
+ * Collections - not cards: an index of shelves (Playbook §26.04).
  * Hovering a row previews its lead frame; clicking enters the shelf.
  */
 export default function Collections() {
@@ -39,8 +39,8 @@ export default function Collections() {
   return (
     <section className="sec sec--light cols" id="work" ref={rootRef} aria-label="Collections">
       <div className="sec__head">
-        <span className="u-kicker">04 — COLLECTIONS</span>
-        <span className="u-mono">FOUR SHELVES — SELECTED, NOT EXHAUSTED</span>
+        <span className="u-kicker">04 - COLLECTIONS</span>
+        <span className="u-mono">FOUR SHELVES - SELECTED, NOT EXHAUSTED</span>
       </div>
 
       <div className="cols__wrap">
@@ -80,7 +80,7 @@ export default function Collections() {
               className={activeRow === col.id || (activeRow === null && i === 0) ? "is-on" : ""}
             />
           ))}
-          <span className="tag u-mono">{activeRow ? "ENTER SHELF →" : "THE WORK — 4 SHELVES"}</span>
+          <span className="tag u-mono">{activeRow ? "ENTER SHELF →" : "THE WORK - 4 SHELVES"}</span>
         </div>
       </div>
 
@@ -166,7 +166,7 @@ function CollectionOverlay({
       {collection && (
         <>
           <div className="col__head">
-            <span className="u-mono">SHELF {collection.index} — {collection.years}</span>
+            <span className="u-mono">SHELF {collection.index} - {collection.years}</span>
             <span className="col__title">{collection.name}</span>
             <button ref={closeRef} className="col__close u-mono" onClick={onClose} aria-label="Close collection" data-cursor="×">
               CLOSE{" "}
@@ -181,7 +181,7 @@ function CollectionOverlay({
                 <figcaption className="col__cap">
                   <span className="t">{p.title}</span>
                   <span className="m">
-                    {p.location} — {p.lens} {p.aperture} {p.shutter} ISO {p.iso}
+                    {p.location} - {p.lens} {p.aperture} {p.shutter} ISO {p.iso}
                   </span>
                 </figcaption>
               </figure>
@@ -191,7 +191,7 @@ function CollectionOverlay({
           <div className="col__foot">
             <button className="col__navbtn" onClick={() => step(-1)} aria-label="Previous frame">← PREV</button>
             <span className="u-mono">
-              {String(page).padStart(2, "0")} / {String(collection.photos.length).padStart(2, "0")} — {collection.line}
+              {String(page).padStart(2, "0")} / {String(collection.photos.length).padStart(2, "0")} - {collection.line}
             </span>
             <button className="col__navbtn" onClick={() => step(1)} aria-label="Next frame">NEXT →</button>
           </div>

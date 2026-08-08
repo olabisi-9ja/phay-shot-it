@@ -17,7 +17,7 @@ type Tile = {
 };
 
 /**
- * Composition of the archive plane — an intentional scatter (Playbook §09),
+ * Composition of the archive plane - an intentional scatter (Playbook §09),
  * hand-tuned so frames breathe and never collide.
  */
 const TILES: Tile[] = [
@@ -36,7 +36,7 @@ const TILES: Tile[] = [
 ];
 
 /**
- * The Archive — a room of frames hanging at different depths.
+ * The Archive - a room of frames hanging at different depths.
  * Drag to wander; scroll for parallax; click a frame to hold it.
  */
 export default function SpatialGallery() {
@@ -55,7 +55,7 @@ export default function SpatialGallery() {
     if (reduced) return; // static plane, still drag-optional below
 
     const ctx = gsap.context(() => {
-      // depth parallax on scroll — nearer frames travel faster
+      // depth parallax on scroll - nearer frames travel faster
       plane.querySelectorAll<HTMLElement>(".gal__tile").forEach((tile) => {
         const depth = Number(tile.dataset.depth ?? 1);
         gsap.fromTo(
@@ -89,7 +89,7 @@ export default function SpatialGallery() {
       );
     }, root);
 
-    // ——— drag the plane (with inertia) ———
+    // --- drag the plane (with inertia) ---
     const viewport = root.querySelector<HTMLElement>(".gal__viewport");
     if (!viewport) return () => ctx.revert();
 
@@ -186,9 +186,9 @@ export default function SpatialGallery() {
   const photos = TILES.map((t) => t.photo);
 
   return (
-    <section className="sec sec--light2 gal" id="archive" ref={rootRef} aria-label="The archive — spatial gallery">
+    <section className="sec sec--light2 gal" id="archive" ref={rootRef} aria-label="The archive - spatial gallery">
       <div className="sec__head">
-        <span className="u-kicker">05 — THE ARCHIVE</span>
+        <span className="u-kicker">05 - THE ARCHIVE</span>
         <span className="u-mono">A ROOM, NOT A GRID</span>
       </div>
 
@@ -215,7 +215,7 @@ export default function SpatialGallery() {
                   sizes="(max-width: 900px) 50vw, 24vw"
                 />
               </span>
-              <span className="fig">FIG. {String(i + 1).padStart(2, "0")} — {tile.photo.title}</span>
+              <span className="fig">FIG. {String(i + 1).padStart(2, "0")} - {tile.photo.title}</span>
             </button>
           ))}
         </div>
@@ -224,7 +224,7 @@ export default function SpatialGallery() {
           <span aria-hidden="true">·</span>
           <span>{TILES.length} FRAMES HUNG</span>
         </div>
-        <span className="gal__dot u-mono">DEPTH 1—3</span>
+        <span className="gal__dot u-mono">DEPTH 1-3</span>
       </div>
     </section>
   );

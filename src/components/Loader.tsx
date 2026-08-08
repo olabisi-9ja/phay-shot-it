@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react";
 import { bus, EVENTS } from "@/lib/bus";
 import { prefersReducedMotion } from "@/lib/motion";
 
-const MIN_TIME = 1250; // never artificially long — the curtain lifts when ready (Playbook §26)
+const MIN_TIME = 1250; // never artificially long - the curtain lifts when ready (Playbook §26)
 const PRELOADS = [
   "/images/lagos-rain-neon-nocturne-1376w.webp",
   "/images/lagos-rain-neon-nocturne-800w.webp",
@@ -78,7 +78,7 @@ export default function Loader() {
     };
     raf = requestAnimationFrame(tick);
 
-    // hard fail-safe — never trap the visitor behind the curtain
+    // hard fail-safe - never trap the visitor behind the curtain
     const failsafe = window.setTimeout(finish, 7000);
     return () => {
       cancelAnimationFrame(raf);
@@ -98,7 +98,7 @@ export default function Loader() {
         <div className="loader__row" style={{ alignItems: "flex-end" }}>
           <span className="u-mono loader__hint">
             <span ref={frameRef}>FRAME 000</span>
-            {" — "}LAGOS / EVERYWHERE
+            {" - "}LAGOS / EVERYWHERE
           </span>
           <span className="loader__count" ref={countRef}>
             000

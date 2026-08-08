@@ -9,7 +9,7 @@ import Photo from "@/components/Photo";
 
 /**
  * A story told the way a print is made (Playbook §03 "Darkroom" + §18):
- * each frame surfaces out of underexposure while you scroll — pinned,
+ * each frame surfaces out of underexposure while you scroll - pinned,
  * scrubbed, one caption at a time. Reduced-motion readers get a
  * calm vertical sequence of the same frames, fully captioned.
  */
@@ -81,7 +81,7 @@ export default function Stories() {
   }, []);
 
   return (
-    <section className="story" id="story" ref={rootRef} aria-label={`Story — ${STORY.title}`}>
+    <section className="story" id="story" ref={rootRef} aria-label={`Story - ${STORY.title}`}>
       <div className="story__stage">
         {STORY.frames.map((frame, i) => (
           <figure className="story__frame" key={frame.photo.id}>
@@ -98,10 +98,10 @@ export default function Stories() {
 
         <div className="story__hud">
           <span className="u-mono u-kicker" style={{ color: "rgba(255,255,255,0.75)" }}>
-            06 — STORY
+            06 - STORY
           </span>
           <span className="u-mono story__counter" aria-live="polite">
-            <span className="story__counter-pre">{STORY.kicker} — </span>FRAME <b>01</b>/0{STORY.frames.length}
+            <span className="story__counter-pre">{STORY.kicker} - </span>FRAME <b>01</b>/0{STORY.frames.length}
           </span>
         </div>
 
@@ -124,7 +124,7 @@ export default function Stories() {
                 className="story__step story__step-item"
                 style={{ position: i === 0 ? "relative" : "absolute", inset: 0, opacity: i === 0 ? 1 : 0 }}
               >
-                {String(i + 1).padStart(2, "0")} — {frame.step} — {frame.time}
+                {String(i + 1).padStart(2, "0")} - {frame.step} - {frame.time}
               </p>
             ))}
           </div>

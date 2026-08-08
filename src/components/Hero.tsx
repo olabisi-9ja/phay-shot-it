@@ -77,12 +77,12 @@ export default function Hero() {
       <div className="hero__content">
         <div className="hero__top u-mono rev-fade">
           <span>{PHOTO.title}</span>
-          <span>{PHOTO.location} — {PHOTO.coords}</span>
+          <span>{PHOTO.location} - {PHOTO.coords}</span>
         </div>
 
         <div className="hero__bottom">
           <div>
-            <p className="hero__pretitle u-mono">01 — OPENING FRAME / {PHOTO.date}</p>
+            <p className="hero__pretitle u-mono">01 - OPENING FRAME / {PHOTO.date}</p>
             <h1 className="hero__title">
               <span className="row"><span className="inner say">I capture</span></span>
               <span className="row"><span className="inner what">EVERY</span></span>

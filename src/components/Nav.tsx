@@ -36,7 +36,7 @@ function LagosClock() {
   }, []);
   return (
     <span className="nav__clock u-mono" suppressHydrationWarning>
-      LAGOS — {time || "00:00:00"} GMT+1
+      LAGOS - {time || "00:00:00"} GMT+1
     </span>
   );
 }
@@ -113,6 +113,14 @@ export default function Nav() {
         </a>
         <LagosClock />
         <div className="nav__right">
+          <a
+            href={`https://wa.me/2348053165862?text=${encodeURIComponent("Hi Phay, I'd like to book a shoot.")}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="nav__book u-mono"
+          >
+            BOOK A SHOOT
+          </a>
           <button
             className={`nav__sound u-mono${soundOn ? " is-on" : ""}`}
             onClick={() => setSoundOn(toggleAmbience())}
@@ -205,7 +213,7 @@ export function ProgressRail() {
           aria-current={active === stop.id ? "true" : undefined}
         >
           <span className="lbl">
-            {stop.index} — {stop.label}
+            {stop.index} - {stop.label}
           </span>
           <span className="tick" aria-hidden="true" />
         </button>

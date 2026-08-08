@@ -36,7 +36,7 @@ export default function About() {
           scrollTrigger: { trigger: ".about__copy", start: "top 86%" },
         }
       );
-      // the portrait drifts slower than the page — it is being carried
+      // the portrait drifts slower than the page - it is being carried
       gsap.fromTo(
         ".about__portrait img",
         { yPercent: -8 },
@@ -53,14 +53,14 @@ export default function About() {
   return (
     <section className="sec sec--light about" id="about" ref={rootRef} aria-label="About the photographer">
       <div className="sec__head">
-        <span className="u-kicker">08 — THE PHOTOGRAPHER</span>
+        <span className="u-kicker">08 - THE PHOTOGRAPHER</span>
         <span className="u-mono">HUMAN, NOT A FEED</span>
       </div>
 
       <div className="about__grid">
         <div>
           <h2 className="about__statement">
-            I am interested in <b>the moments</b> between moments — the breath before the
+            I am interested in <b>the moments</b> between moments - the breath before the
             greeting, the style before the stage.
           </h2>
           <div className="about__copy">
@@ -71,7 +71,7 @@ export default function About() {
             </p>
             <p>
               He photographs with intention, treats every shoot as a collaboration, and believes
-              a photograph should capture more than a face — it should hold a feeling. Most of
+              a photograph should capture more than a face - it should hold a feeling. Most of
               everything here was made in Nigeria. All of it was made on purpose.
             </p>
           </div>
@@ -79,8 +79,8 @@ export default function About() {
             <li><span>BASE</span><b>LAGOS & ILORIN, NG</b></li>
             <li><span>SHOOTS</span><b>PORTRAITS · CONVOCATION · EVENTS</b></li>
             <li><span>STYLE</span><b>LIFESTYLE · BRAND · CULTURE</b></li>
-            <li><span>AVAILABLE</span><b>WORLDWIDE — DM TO BOOK</b></li>
-            <li><span>ACTIVE</span><b>2024 — PRESENT</b></li>
+            <li><span>AVAILABLE</span><b>WORLDWIDE - DM TO BOOK</b></li>
+            <li><span>ACTIVE</span><b>2024 - PRESENT</b></li>
           </ul>
         </div>
 
@@ -88,11 +88,11 @@ export default function About() {
           <figure className="about__portrait">
             <Photo photo={PHOTOS.p01} sizes="(max-width: 900px) 92vw, 44vw" />
           </figure>
-          <figure className="about__polaroid" aria-label="Detail — the style">
+          <figure className="about__polaroid" aria-label="Detail - the style">
             <Photo photo={PHOTOS.p10} sizes="200px" />
             <figcaption>STREET STYLE, ILORIN</figcaption>
           </figure>
-          <p className="about__cap">PORTRAIT — TRADITIONAL AGBADA — ILORIN, NIGERIA</p>
+          <p className="about__cap">PORTRAIT - TRADITIONAL AGBADA - ILORIN, NIGERIA</p>
         </div>
       </div>
     </section>

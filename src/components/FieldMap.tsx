@@ -9,7 +9,7 @@ import Photo from "@/components/Photo";
 import { useLightbox } from "@/components/Lightbox";
 
 /**
- * Field map — geography as navigation.
+ * Field map - geography as navigation.
  * Two cities: Lagos & Ilorin. Hover a pip to preview; click to open archive.
  */
 export default function FieldMap() {
@@ -54,7 +54,7 @@ export default function FieldMap() {
   return (
     <section className="sec sec--light map" id="map" ref={rootRef} aria-label="Field map">
       <div className="sec__head">
-        <span className="u-kicker">07 — FIELD MAP</span>
+        <span className="u-kicker">07 - FIELD MAP</span>
         <span className="u-mono">WHERE THE FRAMES LIVE</span>
       </div>
 
@@ -69,7 +69,7 @@ export default function FieldMap() {
         </svg>
 
         <span className="map__note u-mono" aria-hidden="true">
-          LAGOS — ILORIN — THE ROUTE
+          LAGOS - ILORIN - THE ROUTE
         </span>
 
         {MAP_NODES.map((node) => (
@@ -81,9 +81,9 @@ export default function FieldMap() {
             onMouseLeave={() => setActive(null)}
             onFocus={() => setActive(node)}
             onBlur={() => setActive(null)}
-            onClick={() => open(node.photos, 0, `${node.city} — ARCHIVE`)}
+            onClick={() => open(node.photos, 0, `${node.city} - ARCHIVE`)}
             data-cursor="OPEN"
-            aria-label={`${node.city} — ${node.photos.length} photographs, ${node.years}. Open archive.`}
+            aria-label={`${node.city} - ${node.photos.length} photographs, ${node.years}. Open archive.`}
           >
             <span className="map__pip" aria-hidden="true" />
             <span className="map__label">{node.city}</span>
@@ -104,7 +104,7 @@ export default function FieldMap() {
             <div className="body">
               <span className="city">{active.city}</span>
               <span className="u-mono">
-                {String(active.photos.length).padStart(2, "0")} PRINT{active.photos.length > 1 ? "S" : ""} — {active.years}
+                {String(active.photos.length).padStart(2, "0")} PRINT{active.photos.length > 1 ? "S" : ""} - {active.years}
               </span>
               <span className="u-mono">{active.coords}</span>
               <span className="go">OPEN ARCHIVE →</span>
@@ -114,7 +114,7 @@ export default function FieldMap() {
       </div>
 
       <div className="map__legend u-mono">
-        <span>HOME BASE — LAGOS & ILORIN</span>
+        <span>HOME BASE - LAGOS & ILORIN</span>
         <span>ROUTE 2025 → 2026</span>
         <span>NEXT ─── EVERYWHERE</span>
       </div>

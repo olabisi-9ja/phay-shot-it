@@ -55,7 +55,7 @@ export default function Featured() {
   }, []);
 
   return (
-    <section className="peak" id="peak" ref={rootRef} aria-label={`Featured photograph — ${PHOTO.title}`}>
+    <section className="peak" id="peak" ref={rootRef} aria-label={`Featured photograph - ${PHOTO.title}`}>
       <div
         className="peak__stage"
         onClick={() => open([PHOTO], 0, "PEAK FRAME")}
@@ -76,7 +76,7 @@ export default function Featured() {
         <div className="peak__scrim" aria-hidden="true" />
 
         <div className="peak__hud u-mono">
-          <span>03 — PEAK FRAME</span>
+          <span>03 - PEAK FRAME</span>
           <span className="peak__live">PHAY SHOT IT</span>
           <span>01 / 31</span>
         </div>
@@ -84,7 +84,7 @@ export default function Featured() {
         <div className="peak__cap">
           <div>
             <p className="u-mono" style={{ color: "rgba(255,255,255,0.6)", marginBottom: 14 }}>
-              {PHOTO.location} — {PHOTO.date}
+              {PHOTO.location} - {PHOTO.date}
             </p>
             <h2 className="peak__title">{PHOTO.title}</h2>
             <p className="peak__sub serif-i">culture, captured with intent</p>

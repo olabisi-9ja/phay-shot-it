@@ -1,9 +1,9 @@
 export const SITE = {
   name: "PHAY SHOT IT",
   legalName: "Phay Shot It Photography",
-  tagline: "Don't just drip — capture every moment.",
+  tagline: "Don't just drip - capture every moment.",
   description:
-    "Phay Shot It is the work of Phay — a photographer based in Lagos & Ilorin, Nigeria. Portraits, convocation, brand shoots, events & lifestyle: every moment captured with intent.",
+    "Phay Shot It is the work of Phay - a photographer based in Lagos & Ilorin, Nigeria. Portraits, convocation, brand shoots, events & lifestyle: every moment captured with intent.",
   whatsapp: "0805 316 5862",
   whatsappUrl: "https://wa.me/2348053165862",
   instagram: "@heisphay",
@@ -13,7 +13,7 @@ export const SITE = {
   city: "LAGOS & ILORIN, NIGERIA",
   coords: "6°27′N 3°24′E",
   founded: "2024",
-  volume: "RATE CARD — 2026",
+  volume: "RATE CARD - 2026",
 } as const;
 
 /** Sections registered in the side progress rail. Order = page order. */

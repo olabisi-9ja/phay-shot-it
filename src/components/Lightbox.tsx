@@ -81,7 +81,7 @@ export function LightboxProvider({ children }: { children: React.ReactNode }) {
         className={`lb${state ? " is-open" : ""}`}
         role="dialog"
         aria-modal="true"
-        aria-label={state ? `${state.heading ?? "Photograph"} — ${photo?.title ?? ""}` : undefined}
+        aria-label={state ? `${state.heading ?? "Photograph"} - ${photo?.title ?? ""}` : undefined}
         aria-hidden={!state}
       >
         {state && photo && (
@@ -107,7 +107,7 @@ export function LightboxProvider({ children }: { children: React.ReactNode }) {
             <div className="lb__cap">
               <span className="t">{photo.title}</span>
               <span className="exif">
-                {photo.location} — {photo.lens} {photo.aperture} {photo.shutter} ISO {photo.iso} — {photo.film}
+                {photo.location} - {photo.lens} {photo.aperture} {photo.shutter} ISO {photo.iso} - {photo.film}
               </span>
             </div>
             {state.photos.length > 1 && (

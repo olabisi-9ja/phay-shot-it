@@ -6,7 +6,7 @@ import { useIsoLayoutEffect } from "@/hooks/useIsoLayoutEffect";
 import { PRICING } from "@/lib/catalog";
 import { prefersReducedMotion } from "@/lib/motion";
 
-/** Pricing & services — clean rate card layout. */
+/** Pricing & services - clean rate card layout. */
 export default function Pricing() {
   const rootRef = useRef<HTMLElement>(null);
 
@@ -43,12 +43,12 @@ export default function Pricing() {
   return (
     <section className="sec sec--dark pricing" id="pricing" ref={rootRef} aria-label="Pricing">
       <div className="sec__head">
-        <span className="u-kicker">09 — PRICING</span>
+        <span className="u-kicker">09 - PRICING</span>
         <span className="u-mono">PACKAGES START AT ₦50,000</span>
       </div>
 
       <div className="pricing__tagline">
-        <p className="serif-i">Convocation Season — Limited Weekly Slots</p>
+        <p className="serif-i">Convocation Season - Limited Weekly Slots</p>
       </div>
 
       <div className="pricing__grid">
@@ -74,8 +74,18 @@ export default function Pricing() {
               ))}
             </ul>
             <div className="pricing__price">
-              <span className="u-mono">STARTING AT</span>
-              <span className="pricing__amount">{pkg.price}</span>
+              <div style={{ display: "flex", flexDirection: "column" }}>
+                <span className="u-mono">STARTING AT</span>
+                <span className="pricing__amount">{pkg.price}</span>
+              </div>
+              <a
+                href={`https://wa.me/2348053165862?text=${encodeURIComponent(`Hi Phay, I'd like to book the ${pkg.name} package.`)}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="pricing__book-btn u-mono"
+              >
+                BOOK {pkg.name.toUpperCase()}
+              </a>
             </div>
           </article>
         ))}
@@ -93,11 +103,11 @@ export default function Pricing() {
       </div>
 
       <div className="pricing__terms u-mono">
-        <p>Fully edited gallery delivered digitally — raw files available on request.</p>
+        <p>Fully edited gallery delivered digitally - raw files available on request.</p>
         <p>50% deposit secures your date. Final gallery delivered upon full payment.</p>
         <p>One round of refinements included. Custom quotes available for bespoke commissions.</p>
         <p className="serif-i" style={{ marginTop: 16 }}>
-          Returning & referred clients enjoy loyalty rewards — ask us how.
+          Returning & referred clients enjoy loyalty rewards - ask us how.
         </p>
       </div>
     </section>

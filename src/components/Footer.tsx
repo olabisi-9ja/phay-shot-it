@@ -25,12 +25,12 @@ function FooterClock() {
   }, []);
   return (
     <span className="v mono" suppressHydrationWarning>
-      {time || "00:00:00"} — GMT+1
+      {time || "00:00:00"} - GMT+1
     </span>
   );
 }
 
-/** Footer — split layout: portfolio image left, bold CTA + contacts right. */
+/** Footer - split layout: portfolio image left, bold CTA + contacts right. */
 export default function Footer() {
   const rootRef = useRef<HTMLElement>(null);
 
@@ -77,7 +77,7 @@ export default function Footer() {
 
   return (
     <footer className="sec sec--dark footer" id="contact" ref={rootRef} aria-label="Contact">
-      {/* ——— split hero: image + CTA ——— */}
+      {/* --- split hero: image + CTA --- */}
       <div className="footer__split">
         <div className="footer__hero-wrap">
           <div className="footer__hero-img">
@@ -123,7 +123,7 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* ——— bottom bar ——— */}
+      {/* --- bottom bar --- */}
       <div className="footer__bar">
         <span>© 2026 {SITE.legalName}</span>
         <button className="footer__top-link u-mono" onClick={() => scrollToTarget(0)} data-cursor="TOP">

@@ -8,7 +8,7 @@ import { SITE } from "@/lib/site";
 import { prefersReducedMotion } from "@/lib/motion";
 import Photo from "@/components/Photo";
 
-/** The artist behind the lens — who Phay is. */
+/** The artist behind the lens - who Phay is. */
 export default function Artist() {
   const rootRef = useRef<HTMLElement>(null);
 
@@ -54,24 +54,24 @@ export default function Artist() {
   return (
     <section className="sec sec--light artist" id="artist" ref={rootRef} aria-label="The artist">
       <div className="sec__head">
-        <span className="u-kicker">10 — THE ARTIST</span>
+        <span className="u-kicker">10 - THE ARTIST</span>
         <span className="u-mono">THE MAN BEHIND THE LENS</span>
       </div>
 
       <div className="artist__grid">
         <div>
           <h2 className="artist__statement">
-            I don&apos;t just take photos — I <b>capture moments</b> that last forever.
+            I don&apos;t just take photos - I <b>capture moments</b> that last forever.
           </h2>
           <div className="artist__copy">
             <p>
               Phay is a photographer based in Lagos and Ilorin, Nigeria. He specialises in
-              portraits, convocation shoots, brand sessions, events and lifestyle photography —
+              portraits, convocation shoots, brand sessions, events and lifestyle photography -
               bringing intention, style and energy to every frame.
             </p>
             <p>
               Whether it&apos;s a convocation milestone, a group shoot with the squad, or a solo
-              portrait that speaks volumes — Phay&apos;s lens makes it count. Every session is
+              portrait that speaks volumes - Phay&apos;s lens makes it count. Every session is
               treated as a creative collaboration, not just a transaction.
             </p>
           </div>
@@ -89,13 +89,13 @@ export default function Artist() {
             <h3 className="u-mono" style={{ marginBottom: 16, letterSpacing: 2 }}>GET IN TOUCH</h3>
             <div className="artist__contact-links">
               <a href={SITE.whatsappUrl} target="_blank" rel="noopener noreferrer" data-cursor="CHAT">
-                WhatsApp — {SITE.whatsapp}
+                WhatsApp - {SITE.whatsapp}
               </a>
               <a href={SITE.instagramUrl} target="_blank" rel="noopener noreferrer" data-cursor="FOLLOW">
-                Instagram — {SITE.instagram}
+                Instagram - {SITE.instagram}
               </a>
               <a href={SITE.tiktokUrl} target="_blank" rel="noopener noreferrer" data-cursor="FOLLOW">
-                TikTok — {SITE.tiktok}
+                TikTok - {SITE.tiktok}
               </a>
             </div>
           </div>
@@ -105,7 +105,7 @@ export default function Artist() {
           <figure className="artist__portrait">
             <Photo photo={PHOTOS.artist} sizes="(max-width: 900px) 92vw, 44vw" />
           </figure>
-          <p className="artist__cap u-mono">PHAY — THE MAN BEHIND PHAY SHOT IT</p>
+          <p className="artist__cap u-mono">PHAY - THE MAN BEHIND PHAY SHOT IT</p>
         </div>
       </div>
     </section>

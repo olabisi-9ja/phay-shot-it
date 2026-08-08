@@ -59,7 +59,7 @@ export default function Statement() {
         <span className="statement__line"><span className="serifbig">every&nbsp;moment.</span></span>
       </h2>
       <div className="statement__foot u-mono">
-        <span>— PHAY SHOT IT — 2026 —</span>
+        <span>- PHAY SHOT IT - 2026 -</span>
       </div>
     </section>
   );

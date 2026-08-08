@@ -1,5 +1,5 @@
 /**
- * PHAY SHOT IT — photographic catalog.
+ * PHAY SHOT IT - photographic catalog.
  * Single source of truth: every frame, its data, its collection memberships.
  * Filenames map to /public/images/phay-{NN}-{w}w.webp
  */
@@ -647,7 +647,7 @@ export const srcSetFor = (p: Photo) =>
   p.widths.map((w) => `/images/${p.src}-${w}w.webp ${w}w`).join(", ");
 export const largestSrc = (p: Photo) => `/images/${p.src}-${p.widths[p.widths.length - 1]}w.webp`;
 
-/* ——— collections ——— */
+/* --- collections --- */
 
 export type Collection = {
   id: string;
@@ -666,7 +666,7 @@ export const COLLECTIONS: Collection[] = [
     index: "01",
     name: "PORTRAITS",
     line: "People, before they perform.",
-    years: "2025 — 2026",
+    years: "2025 - 2026",
     photos: pick("p01", "p03", "p08", "p12", "p22", "p25"),
   },
   {
@@ -674,7 +674,7 @@ export const COLLECTIONS: Collection[] = [
     index: "02",
     name: "LIFESTYLE",
     line: "Drip captured, every time.",
-    years: "2025 — 2026",
+    years: "2025 - 2026",
     photos: pick("p04", "p05", "p06", "p07", "p10", "p16"),
   },
   {
@@ -682,7 +682,7 @@ export const COLLECTIONS: Collection[] = [
     index: "03",
     name: "CULTURE",
     line: "Heritage, styled and worn.",
-    years: "2025 — 2026",
+    years: "2025 - 2026",
     photos: pick("p02", "p17", "p19", "p26"),
   },
   {
@@ -690,12 +690,12 @@ export const COLLECTIONS: Collection[] = [
     index: "04",
     name: "GROUPS",
     line: "Together, the frame gets richer.",
-    years: "2025 — 2026",
+    years: "2025 - 2026",
     photos: pick("p09", "p11", "p14", "p15", "p24", "p27"),
   },
 ];
 
-/* ——— the story (pinned scrollytelling sequence) ——— */
+/* --- the story (pinned scrollytelling sequence) --- */
 
 export type StoryFrame = {
   photo: Photo;
@@ -707,7 +707,7 @@ export type StoryFrame = {
 export const STORY = {
   title: "LAGOS & ILORIN",
   kicker: "A STORY IN FOUR FRAMES",
-  date: "2025 — 2026",
+  date: "2025 - 2026",
   frames: <StoryFrame[]>[
     {
       photo: PHOTOS.p01,
@@ -736,7 +736,7 @@ export const STORY = {
   ],
 };
 
-/* ——— field map ——— */
+/* --- field map --- */
 
 export type MapNode = {
   id: string;
@@ -755,7 +755,7 @@ export const MAP_NODES: MapNode[] = [
     id: "lagos",
     city: "LAGOS",
     coords: "6°27′N 3°24′E",
-    years: "2025 — 2026",
+    years: "2025 - 2026",
     x: 38,
     y: 55,
     photo: PHOTOS.p04,
@@ -765,7 +765,7 @@ export const MAP_NODES: MapNode[] = [
     id: "ilorin",
     city: "ILORIN",
     coords: "8°30′N 4°33′E",
-    years: "2025 — 2026",
+    years: "2025 - 2026",
     x: 62,
     y: 35,
     photo: PHOTOS.p01,
@@ -773,7 +773,7 @@ export const MAP_NODES: MapNode[] = [
   },
 ];
 
-/* ——— pricing ——— */
+/* --- pricing --- */
 
 export type PricingPackage = {
   index: string;

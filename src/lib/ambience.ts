@@ -1,5 +1,5 @@
 /**
- * Ambient sound — a synthesized, endlessly subtle "room tone" for the archive.
+ * Ambient sound - a synthesized, endlessly subtle "room tone" for the archive.
  * Filtered brown noise with a slow-breathing lowpass. No audio assets needed.
  * Never autoplays: the context is created only on the SOUND toggle gesture.
  */
@@ -36,7 +36,7 @@ function buildGraph() {
   lowpass.frequency.value = 340;
   lowpass.Q.value = 0.4;
 
-  // slow breathing on the filter — like wind changing its mind
+  // slow breathing on the filter - like wind changing its mind
   const lfo = ctx.createOscillator();
   lfo.frequency.value = 0.06;
   const lfoGain = ctx.createGain();
@@ -61,7 +61,7 @@ export function toggleAmbience(): boolean {
   return running;
 }
 
-/** A soft synthesized shutter click — used on lightbox navigation when sound is on. */
+/** A soft synthesized shutter click - used on lightbox navigation when sound is on. */
 export function shutterClick() {
   if (!running || !ctx || !master) return;
   const t = ctx.currentTime;

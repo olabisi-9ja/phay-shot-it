@@ -43,7 +43,7 @@ export default function Intro() {
   return (
     <section className="sec sec--dark intro" id="intro" ref={rootRef} aria-label="Introduction">
       <div className="sec__head">
-        <span className="u-kicker">02 — THE IDEA</span>
+        <span className="u-kicker">02 - THE IDEA</span>
         <span className="u-mono">MANIFESTO, BRIEFLY</span>
       </div>
 
@@ -57,7 +57,7 @@ export default function Intro() {
         <div aria-hidden="true" />
         <div>
           <p className="intro__aside">
-            I shoot because every person has a frame worth holding — a convocation
+            I shoot because every person has a frame worth holding - a convocation
             milestone, a portrait that speaks, a group moment you&apos;ll never get back.
             This site isn&apos;t a feed to scroll past. It&apos;s an archive, a mood board,
             and an invitation to <span className="serif-i">capture something together</span>.
