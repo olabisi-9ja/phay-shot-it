@@ -126,7 +126,7 @@ export default function Footer() {
       {/* --- bottom bar --- */}
       <div className="footer__bar">
         <span>© 2026 {SITE.legalName}</span>
-        <span className="watermark" style={{ textAlign: "center" }}>
+        <span className="footer__watermark" style={{ textAlign: "center" }}>
           Made with 💜 by <a href="https://olabisiadigun.xyz" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "underline" }}>O L A B I S I</a>
         </span>
         <button className="footer__top-link u-mono" onClick={() => scrollToTarget(0)} data-cursor="TOP">
