@@ -21,18 +21,18 @@ type Tile = {
  * hand-tuned so frames breathe and never collide.
  */
 const TILES: Tile[] = [
-  { photo: PHOTOS.adaeze,          x: 27, y: 0.5, w: 12, depth: 3 },
-  { photo: PHOTOS.craftsman,       x: 13, y: 8,   w: 13, depth: 2 },
-  { photo: PHOTOS.spiral,          x: 40, y: 8,   w: 24, depth: 1 },
-  { photo: PHOTOS.sahara,          x: 70, y: 4,   w: 9,  depth: 2 },
-  { photo: PHOTOS.tokyo,           x: 80, y: 12,  w: 13, depth: 3 },
-  { photo: PHOTOS.lagoon,          x: 14, y: 42,  w: 21, depth: 1 },
-  { photo: PHOTOS.studioRed,       x: 33, y: 41,  w: 13, depth: 3 },
-  { photo: PHOTOS.trumpeter,       x: 66, y: 42,  w: 13, depth: 2 },
-  { photo: PHOTOS.handsDetail,     x: 52, y: 52,  w: 12, depth: 2 },
-  { photo: PHOTOS.shrineMono,      x: 38, y: 70,  w: 20, depth: 2 },
-  { photo: PHOTOS.rainReflections, x: 13, y: 74,  w: 19, depth: 1 },
-  { photo: PHOTOS.bokeh,           x: 63, y: 76,  w: 13, depth: 3 },
+  { photo: PHOTOS.p01,  x: 27, y: 0.5, w: 12, depth: 3 },
+  { photo: PHOTOS.p03,  x: 13, y: 8,   w: 13, depth: 2 },
+  { photo: PHOTOS.p10,  x: 40, y: 8,   w: 24, depth: 1 },
+  { photo: PHOTOS.p18,  x: 70, y: 4,   w: 9,  depth: 2 },
+  { photo: PHOTOS.p22,  x: 80, y: 12,  w: 13, depth: 3 },
+  { photo: PHOTOS.p14,  x: 14, y: 42,  w: 21, depth: 1 },
+  { photo: PHOTOS.p16,  x: 33, y: 41,  w: 13, depth: 3 },
+  { photo: PHOTOS.p05,  x: 66, y: 42,  w: 13, depth: 2 },
+  { photo: PHOTOS.p08,  x: 52, y: 52,  w: 12, depth: 2 },
+  { photo: PHOTOS.p12,  x: 38, y: 70,  w: 20, depth: 2 },
+  { photo: PHOTOS.p25,  x: 13, y: 74,  w: 19, depth: 1 },
+  { photo: PHOTOS.p20,  x: 63, y: 76,  w: 13, depth: 3 },
 ];
 
 /**

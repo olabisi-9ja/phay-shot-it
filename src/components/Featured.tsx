@@ -8,10 +8,10 @@ import { prefersReducedMotion } from "@/lib/motion";
 import Photo, { ExifChips } from "@/components/Photo";
 import { useLightbox } from "@/components/Lightbox";
 
-const PHOTO = PHOTOS.shrine;
+const PHOTO = PHOTOS.p02;
 
 /**
- * The emotional peak (Playbook §33): one photograph owns the whole viewport,
+ * The emotional peak: one photograph owns the whole viewport,
  * pinned while the visitor scrolls through its slow push-in.
  */
 export default function Featured() {
@@ -31,7 +31,7 @@ export default function Featured() {
           anticipatePin: 1,
         },
       });
-      // slow push into the crowd
+      // slow push into the frame
       tl.fromTo(
         ".peak__media img",
         { scale: 1.16 },
@@ -77,8 +77,8 @@ export default function Featured() {
 
         <div className="peak__hud u-mono">
           <span>03 — PEAK FRAME</span>
-          <span className="peak__live">FIELD RECORDING</span>
-          <span>01 / 08</span>
+          <span className="peak__live">PHAY SHOT IT</span>
+          <span>01 / 31</span>
         </div>
 
         <div className="peak__cap">
@@ -87,10 +87,7 @@ export default function Featured() {
               {PHOTO.location} — {PHOTO.date}
             </p>
             <h2 className="peak__title">{PHOTO.title}</h2>
-            <p className="peak__sub serif-i">the Shrine, two fourteen in the morning</p>
-          </div>
-          <div className="peak__chips">
-            <ExifChips photo={PHOTO} />
+            <p className="peak__sub serif-i">culture, captured with intent</p>
           </div>
         </div>
       </div>

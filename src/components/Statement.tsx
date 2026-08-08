@@ -5,7 +5,7 @@ import { gsap } from "@/lib/gsap";
 import { useIsoLayoutEffect } from "@/hooks/useIsoLayoutEffect";
 import { prefersReducedMotion } from "@/lib/motion";
 
-/** The last words before the credits (Playbook §26.10). */
+/** The last words before the credits. */
 export default function Statement() {
   const rootRef = useRef<HTMLElement>(null);
 
@@ -53,13 +53,13 @@ export default function Statement() {
   return (
     <section className="sec sec--dark statement" aria-label="Final statement">
       <h2 className="statement__lines">
-        <span className="statement__line"><span className="anton">SOME</span></span>
-        <span className="statement__line"><span className="anton ghost">MOMENTS</span></span>
-        <span className="statement__line"><span className="anton">DESERVE</span></span>
-        <span className="statement__line"><span className="serifbig">to&nbsp;stay.</span></span>
+        <span className="statement__line"><span className="anton">DON&apos;T</span></span>
+        <span className="statement__line"><span className="anton ghost">JUST DRIP</span></span>
+        <span className="statement__line"><span className="anton">CAPTURE</span></span>
+        <span className="statement__line"><span className="serifbig">every&nbsp;moment.</span></span>
       </h2>
       <div className="statement__foot u-mono">
-        <span>— VOL. II, MMXXVI —</span>
+        <span>— PHAY SHOT IT — 2026 —</span>
       </div>
     </section>
   );

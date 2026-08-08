@@ -61,40 +61,38 @@ export default function About() {
         <div>
           <h2 className="about__statement">
             I am interested in <b>the moments</b> between moments — the breath before the
-            greeting, the street after the rain.
+            greeting, the style before the stage.
           </h2>
           <div className="about__copy">
             <p>
-              Phay is a photographer born and based in Lagos, working almost exclusively on
-              film. Her archive moves between the Shrine at 2am and the lagoon at 5am, between
-              a trumpet in Freedom Park and a dune that only a length of footsteps cross.
+              Phay is a photographer born and based in Nigeria, working between Lagos and Ilorin.
+              His lens moves between convocation milestones and lifestyle sessions, between
+              traditional ceremonies and street-style culture.
             </p>
             <p>
-              She photographs slowly, prints in the dark, and believes a photograph should be
-              an object with a history — its light, its coordinates, its exact second. Most of
-              everything here was made within walking distance of a danfo stop. All of it was
-              made on purpose.
+              He photographs with intention, treats every shoot as a collaboration, and believes
+              a photograph should capture more than a face — it should hold a feeling. Most of
+              everything here was made in Nigeria. All of it was made on purpose.
             </p>
           </div>
           <ul className="about__facts" role="list">
-            <li><span>BASE</span><b>LAGOS, NG — 6°27′N 3°24′E</b></li>
-            <li><span>CARRIES</span><b>NIKON FM2 / HASSELBLAD 500C/M</b></li>
-            <li><span>LIVES AT</span><b>35MM f/1.4</b></li>
-            <li><span>STOCKS</span><b>PORTRA 400 · CINESTILL 800T · HP5</b></li>
-            <li><span>EDUCATION</span><b>SELF · THE STREET · THE RAIN</b></li>
-            <li><span>ACTIVE</span><b>2019 — PRESENT</b></li>
+            <li><span>BASE</span><b>LAGOS & ILORIN, NG</b></li>
+            <li><span>SHOOTS</span><b>PORTRAITS · CONVOCATION · EVENTS</b></li>
+            <li><span>STYLE</span><b>LIFESTYLE · BRAND · CULTURE</b></li>
+            <li><span>AVAILABLE</span><b>WORLDWIDE — DM TO BOOK</b></li>
+            <li><span>ACTIVE</span><b>2024 — PRESENT</b></li>
           </ul>
         </div>
 
         <div className="about__media">
           <figure className="about__portrait">
-            <Photo photo={PHOTOS.adaeze} sizes="(max-width: 900px) 92vw, 44vw" />
+            <Photo photo={PHOTOS.p01} sizes="(max-width: 900px) 92vw, 44vw" />
           </figure>
-          <figure className="about__polaroid" aria-label="Detail — the hands that hold the camera">
-            <Photo photo={PHOTOS.craftsmanHands} sizes="200px" />
-            <figcaption>THE HANDS, APPRENTICED</figcaption>
+          <figure className="about__polaroid" aria-label="Detail — the style">
+            <Photo photo={PHOTOS.p10} sizes="200px" />
+            <figcaption>STREET STYLE, ILORIN</figcaption>
           </figure>
-          <p className="about__cap">SELF-PORTRAIT — ROOFTOP, YABA — GOLDEN HOUR, FLOOR NINE</p>
+          <p className="about__cap">PORTRAIT — TRADITIONAL AGBADA — ILORIN, NIGERIA</p>
         </div>
       </div>
     </section>

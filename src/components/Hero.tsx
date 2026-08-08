@@ -7,7 +7,7 @@ import { PHOTOS } from "@/lib/catalog";
 import { prefersReducedMotion } from "@/lib/motion";
 import Photo from "@/components/Photo";
 
-const PHOTO = PHOTOS.heroRain;
+const PHOTO = PHOTOS.p22;
 
 export default function Hero() {
   const rootRef = useRef<HTMLElement>(null);
@@ -56,8 +56,8 @@ export default function Hero() {
       <link
         rel="preload"
         as="image"
-        href={`/images/${PHOTO.src}-1376w.webp`}
-        imageSrcSet={`/images/${PHOTO.src}-800w.webp 800w, /images/${PHOTO.src}-1376w.webp 1376w`}
+        href={`/images/${PHOTO.src}-960w.webp`}
+        imageSrcSet={`/images/${PHOTO.src}-700w.webp 700w, /images/${PHOTO.src}-960w.webp 960w`}
         imageSizes="100vw"
         fetchPriority="high"
       />
@@ -84,17 +84,17 @@ export default function Hero() {
           <div>
             <p className="hero__pretitle u-mono">01 — OPENING FRAME / {PHOTO.date}</p>
             <h1 className="hero__title">
-              <span className="row"><span className="inner say">I photograph</span></span>
-              <span className="row"><span className="inner what">WHAT</span></span>
-              <span className="row"><span className="inner remains">remains.</span></span>
+              <span className="row"><span className="inner say">I capture</span></span>
+              <span className="row"><span className="inner what">EVERY</span></span>
+              <span className="row"><span className="inner remains">moment.</span></span>
             </h1>
           </div>
           <div className="hero__meta u-mono rev-fade">
-            <span>{PHOTO.camera}</span>
+            <span>PHAY SHOT IT</span>
             <span>
-              <b>{PHOTO.lens} {PHOTO.aperture}</b> {PHOTO.shutter} ISO {PHOTO.iso}
+              <b>LAGOS & ILORIN</b>
             </span>
-            <span>{PHOTO.film}</span>
+            <span>PORTRAITS · CONVOCATION · LIFESTYLE</span>
           </div>
         </div>
       </div>

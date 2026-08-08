@@ -6,7 +6,8 @@ import SpatialGallery from "@/components/SpatialGallery";
 import Stories from "@/components/Stories";
 import FieldMap from "@/components/FieldMap";
 import About from "@/components/About";
-import Journal from "@/components/Journal";
+import Pricing from "@/components/Pricing";
+import Artist from "@/components/Artist";
 import Statement from "@/components/Statement";
 import Footer from "@/components/Footer";
 
@@ -21,7 +22,8 @@ export default function Home() {
       <Stories />
       <FieldMap />
       <About />
-      <Journal />
+      <Pricing />
+      <Artist />
       <Statement />
       <Footer />
     </>

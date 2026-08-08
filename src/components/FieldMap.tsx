@@ -9,9 +9,8 @@ import Photo from "@/components/Photo";
 import { useLightbox } from "@/components/Lightbox";
 
 /**
- * Field map — geography as navigation (Playbook §12).
- * An abstract graticule, five cities, and the route a life on film takes.
- * Hover a pip to preview; open its archive with a click.
+ * Field map — geography as navigation.
+ * Two cities: Lagos & Ilorin. Hover a pip to preview; click to open archive.
  */
 export default function FieldMap() {
   const rootRef = useRef<HTMLElement>(null);
@@ -49,26 +48,14 @@ export default function FieldMap() {
     return () => ctx.revert();
   }, []);
 
-  // route through the journey in time order: LA → Lagos → Sahara → Paris → Tokyo
-  const routeOrder = ["los-angeles", "lagos", "sahara", "paris", "tokyo"];
-  const nodeById = Object.fromEntries(MAP_NODES.map((n) => [n.id, n]));
-  const routePts = routeOrder.map((id) => nodeById[id]).filter(Boolean);
-
-  const routePath = routePts
-    .map((n, i) => {
-      if (i === 0) return `M ${n.x} ${n.y}`;
-      const prev = routePts[i - 1];
-      const cx = (prev.x + n.x) / 2;
-      const cy = Math.min(prev.y, n.y) - 10;
-      return `Q ${cx} ${cy} ${n.x} ${n.y}`;
-    })
-    .join(" ");
+  // simple route: Lagos → Ilorin
+  const routePath = `M ${MAP_NODES[0].x} ${MAP_NODES[0].y} Q 50 25 ${MAP_NODES[1].x} ${MAP_NODES[1].y}`;
 
   return (
     <section className="sec sec--light map" id="map" ref={rootRef} aria-label="Field map">
       <div className="sec__head">
         <span className="u-kicker">07 — FIELD MAP</span>
-        <span className="u-mono">WHERE THE NEGATIVES LIVE</span>
+        <span className="u-mono">WHERE THE FRAMES LIVE</span>
       </div>
 
       <div className="map__plane">
@@ -82,7 +69,7 @@ export default function FieldMap() {
         </svg>
 
         <span className="map__note u-mono" aria-hidden="true">
-          NOT TO SCALE — ONLY TO MEMORY
+          LAGOS — ILORIN — THE ROUTE
         </span>
 
         {MAP_NODES.map((node) => (
@@ -127,9 +114,9 @@ export default function FieldMap() {
       </div>
 
       <div className="map__legend u-mono">
-        <span>HOME BASE — LAGOS</span>
-        <span>ROUTE TAKEN 2025 → 2026</span>
-        <span>NEXT ─── UNDEVELOPED</span>
+        <span>HOME BASE — LAGOS & ILORIN</span>
+        <span>ROUTE 2025 → 2026</span>
+        <span>NEXT ─── EVERYWHERE</span>
       </div>
     </section>
   );

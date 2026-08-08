@@ -1,16 +1,19 @@
 export const SITE = {
   name: "PHAY SHOT IT",
   legalName: "Phay Shot It Photography",
-  tagline: "I photograph what remains.",
+  tagline: "Don't just drip — capture every moment.",
   description:
-    "Phay Shot It is the photographic world of Phay — a Lagos-born photographer working in film. Portraits, places, nocturnes and motion: an immersive archive of what remains.",
-  email: "hello@phayshot.it",
-  instagram: "@phay.shot.it",
-  instagramUrl: "https://instagram.com/phay.shot.it",
-  city: "LAGOS, NIGERIA",
-  coords: '6°27′N 3°24′E',
-  founded: "2019",
-  volume: "VOL. II — MMXXVI",
+    "Phay Shot It is the work of Phay — a photographer based in Lagos & Ilorin, Nigeria. Portraits, convocation, brand shoots, events & lifestyle: every moment captured with intent.",
+  whatsapp: "0805 316 5862",
+  whatsappUrl: "https://wa.me/2348053165862",
+  instagram: "@heisphay",
+  instagramUrl: "https://instagram.com/heisphay",
+  tiktok: "@heisphay",
+  tiktokUrl: "https://tiktok.com/@heisphay",
+  city: "LAGOS & ILORIN, NIGERIA",
+  coords: "6°27′N 3°24′E",
+  founded: "2024",
+  volume: "RATE CARD — 2026",
 } as const;
 
 /** Sections registered in the side progress rail. Order = page order. */
@@ -23,5 +26,6 @@ export const RAIL_STOPS = [
   { id: "story", label: "STORY", index: "06" },
   { id: "map", label: "MAP", index: "07" },
   { id: "about", label: "ABOUT", index: "08" },
-  { id: "journal", label: "NOTES", index: "09" },
+  { id: "pricing", label: "PRICING", index: "09" },
+  { id: "artist", label: "ARTIST", index: "10" },
 ] as const;

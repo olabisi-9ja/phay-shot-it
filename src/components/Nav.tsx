@@ -10,13 +10,14 @@ import { PHOTOS } from "@/lib/catalog";
 import Photo from "@/components/Photo";
 
 const MENU_ITEMS = [
-  { label: "WORK", target: "#work", note: "four shelves", thumb: PHOTOS.studioRed },
-  { label: "ARCHIVE", target: "#archive", note: "a room of frames", thumb: PHOTOS.spiral },
-  { label: "STORY", target: "#story", note: "lagos, after midnight", thumb: PHOTOS.heroRain },
-  { label: "MAP", target: "#map", note: "where the negatives live", thumb: PHOTOS.tokyo },
-  { label: "ABOUT", target: "#about", note: "the hand that holds it", thumb: PHOTOS.adaeze },
-  { label: "JOURNAL", target: "#journal", note: "notes from the field", thumb: PHOTOS.bokeh },
-  { label: "CONTACT", target: "#contact", note: "let's make something", thumb: PHOTOS.lagoon },
+  { label: "WORK", target: "#work", note: "four shelves", thumb: PHOTOS.p12 },
+  { label: "ARCHIVE", target: "#archive", note: "a room of frames", thumb: PHOTOS.p10 },
+  { label: "STORY", target: "#story", note: "lagos & ilorin", thumb: PHOTOS.p01 },
+  { label: "MAP", target: "#map", note: "where the frames live", thumb: PHOTOS.p14 },
+  { label: "ABOUT", target: "#about", note: "the photographer", thumb: PHOTOS.p22 },
+  { label: "PRICING", target: "#pricing", note: "packages from ₦50k", thumb: PHOTOS.p03 },
+  { label: "ARTIST", target: "#artist", note: "the man behind the lens", thumb: PHOTOS.artist },
+  { label: "CONTACT", target: "#contact", note: "let's capture something", thumb: PHOTOS.p02 },
 ];
 
 function LagosClock() {
@@ -164,10 +165,10 @@ export default function Nav() {
           ))}
         </ul>
         <div className="menu__foot u-mono">
-          <span>{SITE.email}</span>
+          <span>WhatsApp: {SITE.whatsapp}</span>
           <span>{SITE.instagram}</span>
           <span>
-            {SITE.city} — {SITE.coords}
+            {SITE.city}
           </span>
         </div>
       </nav>

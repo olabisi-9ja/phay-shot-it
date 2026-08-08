@@ -48,25 +48,25 @@ export default function Intro() {
       </div>
 
       <h2 className="intro__lines">
-        <span className="intro__line"><span className="intro__big">Photographs</span></span>
-        <span className="intro__line"><span className="intro__big">of people, places</span></span>
-        <span className="intro__line"><span className="intro__big--serif">&amp; time.</span></span>
+        <span className="intro__line"><span className="intro__big">Portraits,</span></span>
+        <span className="intro__line"><span className="intro__big">moments, culture</span></span>
+        <span className="intro__line"><span className="intro__big--serif">&amp; style.</span></span>
       </h2>
 
       <div className="intro__grid">
         <div aria-hidden="true" />
         <div>
           <p className="intro__aside">
-            I work on film because film requires <span className="serif-i">faith</span> — you
-            compose, you expose, and you let go. This site is built the same way: not a feed
-            to scroll past, but a darkroom, an archive and a walk home at midnight. Every frame
-            here is an object with a history — its light, its coordinates, its second of time.
+            I shoot because every person has a frame worth holding — a convocation
+            milestone, a portrait that speaks, a group moment you&apos;ll never get back.
+            This site isn&apos;t a feed to scroll past. It&apos;s an archive, a mood board,
+            and an invitation to <span className="serif-i">capture something together</span>.
           </p>
           <ul className="intro__stats" role="list">
-            <li><span>YEARS SHOOTING</span><b>08</b></li>
-            <li><span>COUNTRIES</span><b>14</b></li>
-            <li><span>ROLLS DEVELOPED</span><b>316 +</b></li>
-            <li><span>CAMERAS LOST TO RAIN</span><b>02</b></li>
+            <li><span>FRAMES SHOT</span><b>31 +</b></li>
+            <li><span>CITIES</span><b>02</b></li>
+            <li><span>SHOOTS</span><b>20 +</b></li>
+            <li><span>HAPPY CLIENTS</span><b>∞</b></li>
           </ul>
         </div>
       </div>
