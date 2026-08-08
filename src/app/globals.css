@@ -2416,7 +2416,7 @@ html.anim-ready .rev-fade {
 /* Fix vertical cropping */
 .hero__img, .peak__media img { object-position: center 25% !important; }
 
-/* ——— SERVICES ——— */
+/* --- SERVICES --- */
 .services {
   padding-top: var(--sec-pad);
   padding-bottom: var(--sec-pad);
@@ -2443,7 +2443,7 @@ html.anim-ready .rev-fade {
   max-width: 90%;
 }
 
-/* ——— TESTIMONIALS ——— */
+/* --- TESTIMONIALS --- */
 .testimonials {
   padding-top: var(--sec-pad);
   padding-bottom: var(--sec-pad);
@@ -2475,7 +2475,7 @@ html.anim-ready .rev-fade {
   color: var(--muted);
 }
 
-/* ——— FAQ ——— */
+/* --- FAQ --- */
 .faq {
   padding-top: var(--sec-pad);
   padding-bottom: var(--sec-pad);
