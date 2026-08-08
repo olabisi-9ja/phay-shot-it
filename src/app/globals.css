@@ -2602,57 +2602,6 @@ html.anim-ready .rev-fade {
   }
 }
 
-/* ——— MOBILE AFFORDANCES ——— */
-@media (hover: none), (pointer: coarse) {
-  [data-cursor="VIEW"]::after,
-  [data-cursor="ENTER"]::after {
-    content: "TAP";
-    position: absolute;
-    bottom: 12px;
-    right: 12px;
-    background: rgba(0,0,0,0.6);
-    backdrop-filter: blur(4px);
-    color: #fff;
-    font-family: var(--font-mono);
-    font-size: 9px;
-    letter-spacing: 0.1em;
-    padding: 6px 10px;
-    border-radius: 4px;
-    pointer-events: none;
-    z-index: 10;
-  }
-  [data-cursor="DRAG"]::after {
-    content: "SWIPE ↔";
-    position: absolute;
-    bottom: 24px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: rgba(0,0,0,0.6);
-    backdrop-filter: blur(4px);
-    color: #fff;
-    font-family: var(--font-mono);
-    font-size: 9px;
-    letter-spacing: 0.1em;
-    padding: 6px 12px;
-    border-radius: 100px;
-    pointer-events: none;
-    z-index: 10;
-  }
-  .nav {
-    height: 48px !important;
-    padding: 0 12px !important;
-  }
-  .nav__brand {
-    font-size: 13px !important;
-  }
-  .nav__right {
-    gap: 8px !important;
-  }
-  .nav__sound, .nav__index {
-    font-size: 8.5px !important;
-    padding: 4px !important;
-  }
-}
 
 /* ——— MOBILE MENU FIXES ——— */
 @media (max-width: 720px) {
