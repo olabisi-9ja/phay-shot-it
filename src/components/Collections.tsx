@@ -40,7 +40,7 @@ export default function Collections() {
     <section className="sec sec--light cols" id="work" ref={rootRef} aria-label="Collections">
       <div className="sec__head">
         <span className="u-kicker">04 - COLLECTIONS</span>
-        <span className="u-mono">FOUR SHELVES - SELECTED, NOT EXHAUSTED</span>
+        <span className="u-mono">FIVE SHELVES - SELECTED, NOT EXHAUSTED</span>
       </div>
 
       <div className="cols__wrap">
@@ -80,7 +80,7 @@ export default function Collections() {
               className={activeRow === col.id || (activeRow === null && i === 0) ? "is-on" : ""}
             />
           ))}
-          <span className="tag u-mono">{activeRow ? "ENTER SHELF →" : "THE WORK - 4 SHELVES"}</span>
+          <span className="tag u-mono">{activeRow ? "ENTER SHELF →" : "THE WORK - 5 SHELVES"}</span>
         </div>
       </div>
 

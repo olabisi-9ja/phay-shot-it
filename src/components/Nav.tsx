@@ -10,7 +10,7 @@ import { PHOTOS } from "@/lib/catalog";
 import Photo from "@/components/Photo";
 
 const MENU_ITEMS = [
-  { label: "WORK", target: "#work", note: "four shelves", thumb: PHOTOS.p12 },
+  { label: "WORK", target: "#work", note: "five shelves", thumb: PHOTOS.p12 },
   { label: "ARCHIVE", target: "#archive", note: "a room of frames", thumb: PHOTOS.p10 },
   { label: "STORY", target: "#story", note: "lagos & ilorin", thumb: PHOTOS.p01 },
   { label: "MAP", target: "#map", note: "where the frames live", thumb: PHOTOS.p14 },

@@ -693,6 +693,19 @@ export const COLLECTIONS: Collection[] = [
     years: "2025 - 2026",
     photos: pick("p09", "p11", "p14", "p15", "p24", "p27"),
   },
+  {
+    id: "vault",
+    index: "05",
+    name: "THE VAULT",
+    line: "Every frame, unfiltered.",
+    years: "2025 - 2026",
+    photos: pick(
+      "p01", "p02", "p03", "p04", "p05", "p06", "p07", "p08", "p09", "p10",
+      "p11", "p12", "p13", "p14", "p15", "p16", "p17", "p18", "p19", "p20",
+      "p21", "p22", "p23", "p24", "p25", "p26", "p27", "p28", "p29", "p30",
+      "p31"
+    ),
+  },
 ];
 
 /* --- the story (pinned scrollytelling sequence) --- */
