@@ -98,7 +98,7 @@ export default function Stories() {
 
         <div className="story__hud">
           <span className="u-mono u-kicker" style={{ color: "rgba(255,255,255,0.75)" }}>
-            06 - STORY
+            04 - SELECTED STORIES
           </span>
           <span className="u-mono story__counter" aria-live="polite">
             <span className="story__counter-pre">{STORY.kicker} - </span>FRAME <b>01</b>/0{STORY.frames.length}

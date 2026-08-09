@@ -43,7 +43,7 @@ export default function Pricing() {
   return (
     <section className="sec sec--dark pricing" id="pricing" ref={rootRef} aria-label="Pricing">
       <div className="sec__head">
-        <span className="u-kicker">09 - PRICING</span>
+        <span className="u-kicker">11 - PRICING</span>
         <span className="u-mono">PACKAGES START AT ₦50,000</span>
       </div>
 

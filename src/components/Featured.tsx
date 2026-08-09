@@ -76,7 +76,7 @@ export default function Featured() {
         <div className="peak__scrim" aria-hidden="true" />
 
         <div className="peak__hud u-mono">
-          <span>03 - PEAK FRAME</span>
+          <span>03 - SIGNATURE WORK</span>
           <span className="peak__live">PHAY SHOT IT</span>
           <span>01 / 31</span>
         </div>

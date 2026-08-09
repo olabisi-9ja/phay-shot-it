@@ -6,20 +6,24 @@ import { useIsoLayoutEffect } from "@/hooks/useIsoLayoutEffect";
 
 const SERVICES = [
   {
-    title: "PORTRAITS",
-    desc: "Portraits that look like you, only intentional. Creative direction, styling consultation, and flawless lighting.",
+    category: "PERSONAL",
+    items: ["Portraits", "Convocation", "Birthday", "Couple", "Graduation"],
+    desc: "Intentional captures of your most important individual milestones.",
   },
   {
-    title: "CONVOCATION",
-    desc: "Your degree deserves more than a quick phone picture. Document this milestone with cinematic quality.",
+    category: "CREATIVE",
+    items: ["Fashion", "Lifestyle", "Editorial", "Conceptual"],
+    desc: "Artistic direction for creators, models, and individuals with a vision.",
   },
   {
-    title: "BRAND PHOTOGRAPHY",
-    desc: "Build a visual identity around your people and products. Campaigns, lookbooks, and corporate lifestyle.",
+    category: "BUSINESS",
+    items: ["Brand Photography", "Campaigns", "Product", "Corporate"],
+    desc: "Strategic visual storytelling to elevate your brand's identity.",
   },
   {
-    title: "EVENTS & LIFESTYLE",
-    desc: "Unobtrusive coverage of life's most important moments, capturing raw emotion and authentic interactions.",
+    category: "EVENTS",
+    items: ["Graduation Ceremonies", "Parties", "Ceremonies", "Social Events"],
+    desc: "Comprehensive coverage of celebrations, both large and intimate.",
   },
 ];
 
@@ -46,14 +50,15 @@ export default function Services() {
   return (
     <section className="sec sec--dark services" id="services" ref={rootRef}>
       <div className="sec__head">
-        <span className="u-kicker">03 - WHAT I SHOOT</span>
+        <span className="u-kicker">05 - SERVICES</span>
         <span className="u-mono">LAGOS / ILORIN</span>
       </div>
 
       <div className="services__grid">
         {SERVICES.map((s, i) => (
           <div key={i} className="service-item">
-            <h3 className="service__title">{s.title}</h3>
+            <span className="u-mono" style={{ opacity: 0.5, fontSize: '0.8rem' }}>{s.category}</span>
+            <h3 className="service__title" style={{ marginTop: 8 }}>{s.items.join(" · ").toUpperCase()}</h3>
             <p className="service__desc">{s.desc}</p>
           </div>
         ))}

@@ -11,6 +11,7 @@ import Pricing from "@/components/Pricing";
 import Testimonials from "@/components/Testimonials";
 import FAQ from "@/components/FAQ";
 import Artist from "@/components/Artist";
+import Booking from "@/components/Booking";
 import Statement from "@/components/Statement";
 import Footer from "@/components/Footer";
 
@@ -19,17 +20,17 @@ export default function Home() {
     <>
       <Hero />
       <Intro />
-      <Services />
       <Featured />
+      <Stories />
+      <Services />
+      <Artist />
       <Collections />
       <SpatialGallery />
-      <Stories />
       <FieldMap />
-      <About />
-      <Pricing />
       <Testimonials />
+      <Pricing />
       <FAQ />
-      <Artist />
+      <Booking />
       <Statement />
       <Footer />
     </>

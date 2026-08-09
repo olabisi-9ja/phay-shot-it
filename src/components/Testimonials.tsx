@@ -4,21 +4,27 @@ import { useRef } from "react";
 import { gsap } from "@/lib/gsap";
 import { useIsoLayoutEffect } from "@/hooks/useIsoLayoutEffect";
 
+import Photo from "@/components/Photo";
+import { PHOTOS } from "@/lib/catalog";
+
 const TESTIMONIALS = [
   {
     quote: "Phay didn't just take pictures; he directed the entire experience. The final images look like an editorial spread.",
     client: "Sarah O.",
     type: "Convocation Session \u00b7 Ilorin",
+    photo: PHOTOS.p02,
   },
   {
     quote: "Professional, punctual, and an incredible eye for detail. The lighting in our portraits was absolutely flawless.",
     client: "Tobi M.",
     type: "Portrait Session \u00b7 Lagos",
+    photo: PHOTOS.p07,
   },
   {
     quote: "We hired Phay for our brand campaign and he exceeded all expectations. He understands visual storytelling perfectly.",
     client: "Vibe Studios",
     type: "Brand Campaign \u00b7 Lagos",
+    photo: PHOTOS.p05,
   },
 ];
 
@@ -45,17 +51,22 @@ export default function Testimonials() {
   return (
     <section className="sec sec--light2 testimonials" id="testimonials" ref={rootRef}>
       <div className="sec__head">
-        <span className="u-kicker">08 - CLIENT WORDS</span>
-        <span className="u-mono">HAPPY CLIENTS \u221e</span>
+        <span className="u-kicker">10 - CLIENT WORDS</span>
+        <span className="u-mono">30+ HAPPY CLIENTS</span>
       </div>
 
       <div className="testimonials__list">
         {TESTIMONIALS.map((t, i) => (
           <div key={i} className="testim">
-            <p className="testim__quote serif-i">"{t.quote}"</p>
-            <div className="testim__meta">
-              <span className="testim__name">{t.client}</span>
-              <span className="testim__type u-mono">{t.type}</span>
+            <div className="testim__content">
+              <p className="testim__quote serif-i">"{t.quote}"</p>
+              <div className="testim__meta">
+                <span className="testim__name">{t.client}</span>
+                <span className="testim__type u-mono">{t.type}</span>
+              </div>
+            </div>
+            <div className="testim__visual">
+              <Photo photo={t.photo} sizes="200px" />
             </div>
           </div>
         ))}

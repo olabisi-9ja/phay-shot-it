@@ -804,7 +804,7 @@ export const PRICING: PricingPackage[] = [
     tagline: "For a quick, polished solo portrait or single convocation moment",
     features: [
       "4 professionally edited photos",
-      "5 selected unedited photos",
+      "5 selected originals",
       "Professional camera & lighting setup",
       "1 outfit",
       "1 location",
@@ -818,7 +818,7 @@ export const PRICING: PricingPackage[] = [
     tagline: "Ideal for a full convocation day or a considered lifestyle session",
     features: [
       "8 professionally edited photos",
-      "10 selected unedited photos",
+      "10 selected originals",
       "Professional camera & lighting setup",
       "2 outfits",
       "Flexible locations",
@@ -834,7 +834,7 @@ export const PRICING: PricingPackage[] = [
     tagline: "For families and milestone celebrations that deserve the full story",
     features: [
       "12 professionally edited photos, cinematic color grade",
-      "10 selected unedited photos",
+      "10 selected originals",
       "Professional camera & lighting setup",
       "3 outfits",
       "Multiple locations",

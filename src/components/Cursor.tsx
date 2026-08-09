@@ -29,6 +29,7 @@ export default function Cursor() {
         x = tx;
         y = ty;
         visible = true;
+        el.style.opacity = "1";
       }
     };
 
@@ -46,6 +47,14 @@ export default function Cursor() {
 
     const down = () => el.classList.add("is-pressed");
     const up = () => el.classList.remove("is-pressed");
+    const enter = () => {
+      visible = true;
+      el.style.opacity = "1";
+    };
+    const leave = () => {
+      visible = false;
+      el.style.opacity = "0";
+    };
 
     const loop = () => {
       x += (tx - x) * 0.22;
@@ -58,6 +67,23 @@ export default function Cursor() {
     document.addEventListener("mouseover", over, { passive: true });
     window.addEventListener("mousedown", down);
     window.addEventListener("mouseup", up);
+    window.addEventListener("mouseenter", enter);
+    window.addEventListener("mouseleave", leave);
+    // update label on scroll as the element under mouse might change
+    window.addEventListener("scroll", () => {
+      const target = document.elementFromPoint(tx, ty);
+      if (target) {
+        const holder = target.closest<HTMLElement>("[data-cursor]");
+        const label = labelRef.current;
+        if (holder && label) {
+          label.textContent = holder.dataset.cursor ?? "";
+          el.classList.add("has-label");
+        } else {
+          el.classList.remove("has-label");
+        }
+      }
+    }, { passive: true });
+
     raf = requestAnimationFrame(loop);
 
     return () => {
@@ -65,6 +91,8 @@ export default function Cursor() {
       document.removeEventListener("mouseover", over);
       window.removeEventListener("mousedown", down);
       window.removeEventListener("mouseup", up);
+      window.removeEventListener("mouseenter", enter);
+      window.removeEventListener("mouseleave", leave);
       cancelAnimationFrame(raf);
     };
   }, []);

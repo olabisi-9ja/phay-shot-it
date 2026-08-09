@@ -188,7 +188,7 @@ export default function SpatialGallery() {
   return (
     <section className="sec sec--light2 gal" id="archive" ref={rootRef} aria-label="The archive - spatial gallery">
       <div className="sec__head">
-        <span className="u-kicker">05 - THE ARCHIVE</span>
+        <span className="u-kicker">08 - SPATIAL ARCHIVE</span>
         <span className="u-mono">A ROOM, NOT A GRID</span>
       </div>
 

@@ -39,7 +39,7 @@ export default function Collections() {
   return (
     <section className="sec sec--light cols" id="work" ref={rootRef} aria-label="Collections">
       <div className="sec__head">
-        <span className="u-kicker">04 - COLLECTIONS</span>
+        <span className="u-kicker">07 - THE ARCHIVE</span>
         <span className="u-mono">FIVE SHELVES - SELECTED, NOT EXHAUSTED</span>
       </div>
 
