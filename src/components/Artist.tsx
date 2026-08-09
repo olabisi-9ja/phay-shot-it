@@ -27,7 +27,7 @@ export default function Artist() {
         }
       );
       gsap.fromTo(
-        ".artist__copy, .artist__services",
+        ".artist__copy, .artist__facts, .artist__contact",
         { opacity: 0, y: 30 },
         {
           opacity: 1,
@@ -54,37 +54,35 @@ export default function Artist() {
   return (
     <section className="sec sec--light artist" id="artist" ref={rootRef} aria-label="The artist">
       <div className="sec__head">
-        <span className="u-kicker">10 - THE ARTIST</span>
-        <span className="u-mono">THE MAN BEHIND THE LENS</span>
+        <span className="u-kicker">06 - THE PHOTOGRAPHER</span>
+        <span className="u-mono">HUMAN, NOT A FEED</span>
       </div>
 
       <div className="artist__grid">
         <div>
           <h2 className="artist__statement">
-            I don&apos;t just take photos - I <b>capture moments</b> that last forever.
+            I am interested in <b>the moments</b> between moments - the breath before the
+            greeting, the style before the stage.
           </h2>
           <div className="artist__copy">
             <p>
-              Phay is a photographer based in Lagos and Ilorin, Nigeria. He specialises in
-              portraits, convocation shoots, brand sessions, events and lifestyle photography -
-              bringing intention, style and energy to every frame.
+              Phay is a photographer born and based in Nigeria, working between Lagos and Ilorin.
+              His lens moves between convocation milestones and lifestyle sessions, between
+              traditional ceremonies and street-style culture.
             </p>
             <p>
-              Whether it&apos;s a convocation milestone, a group shoot with the squad, or a solo
-              portrait that speaks volumes - Phay&apos;s lens makes it count. Every session is
-              treated as a creative collaboration, not just a transaction.
+              He photographs with intention, treats every shoot as a collaboration, and believes
+              a photograph should capture more than a face - it should hold a feeling. Most of
+              everything here was made in Nigeria. All of it was made on purpose.
             </p>
           </div>
-          <div className="artist__services">
-            <h3 className="u-mono" style={{ marginBottom: 16, letterSpacing: 2 }}>SERVICES</h3>
-            <ul className="artist__services-list" role="list">
-              <li>PORTRAITS</li>
-              <li>CONVOCATION</li>
-              <li>BRAND SHOOTS</li>
-              <li>EVENTS</li>
-              <li>LIFESTYLE</li>
-            </ul>
-          </div>
+          
+          <ul className="artist__facts" role="list" style={{ marginTop: 40, marginBottom: 40 }}>
+            <li><span>BASE</span><b>LAGOS & ILORIN, NG</b></li>
+            <li><span>ACTIVE</span><b>2024 - PRESENT</b></li>
+            <li><span>AVAILABLE</span><b>WORLDWIDE - DM TO BOOK</b></li>
+          </ul>
+
           <div className="artist__contact">
             <h3 className="u-mono" style={{ marginBottom: 16, letterSpacing: 2 }}>GET IN TOUCH</h3>
             <div className="artist__contact-links">
@@ -93,9 +91,6 @@ export default function Artist() {
               </a>
               <a href={SITE.instagramUrl} target="_blank" rel="noopener noreferrer" data-cursor="FOLLOW">
                 Instagram - {SITE.instagram}
-              </a>
-              <a href={SITE.tiktokUrl} target="_blank" rel="noopener noreferrer" data-cursor="FOLLOW">
-                TikTok - {SITE.tiktok}
               </a>
             </div>
           </div>

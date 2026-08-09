@@ -66,7 +66,7 @@ export default function Intro() {
             <li><span>FRAMES SHOT</span><b>31 +</b></li>
             <li><span>CITIES</span><b>02</b></li>
             <li><span>SHOOTS</span><b>20 +</b></li>
-            <li><span>HAPPY CLIENTS</span><b>∞</b></li>
+            <li><span>HAPPY CLIENTS</span><b>30 +</b></li>
           </ul>
         </div>
       </div>

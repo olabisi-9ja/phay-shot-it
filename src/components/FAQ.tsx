@@ -11,7 +11,7 @@ const FAQS = [
   },
   {
     q: "How many photos do I receive?",
-    a: "This depends on the package you select. Essentials includes 4 polished photos, Signature includes 10, and Legacy includes 20+.",
+    a: "Edited photographs range from 4–12 depending on your package, with additional selected originals included in every session.",
   },
   {
     q: "How quickly will I receive them?",
@@ -51,7 +51,7 @@ export default function FAQ() {
   return (
     <section className="sec sec--dark faq" id="faq" ref={rootRef}>
       <div className="sec__head">
-        <span className="u-kicker">09 - FAQ</span>
+        <span className="u-kicker">12 - FAQ</span>
         <span className="u-mono">COMMON QUESTIONS</span>
       </div>
 

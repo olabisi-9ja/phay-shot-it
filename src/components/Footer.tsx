@@ -77,6 +77,22 @@ export default function Footer() {
 
   return (
     <footer className="sec sec--dark footer" id="contact" ref={rootRef} aria-label="Contact">
+      
+      {/* --- instagram / latest frames --- */}
+      <div className="footer__latest">
+        <div className="footer__latest-head">
+          <span className="u-mono">FOLLOW THE LATEST FRAMES</span>
+          <a href={SITE.instagramUrl} target="_blank" rel="noopener noreferrer" className="serif-i">@heisphay</a>
+        </div>
+        <div className="footer__latest-grid">
+          {[PHOTOS.p31, PHOTOS.p30, PHOTOS.p29, PHOTOS.p28, PHOTOS.p27, PHOTOS.p26].map((p, i) => (
+            <a key={i} href={SITE.instagramUrl} target="_blank" rel="noopener noreferrer" className="footer__latest-item">
+              <Photo photo={p} sizes="200px" />
+            </a>
+          ))}
+        </div>
+      </div>
+
       {/* --- split hero: image + CTA --- */}
       <div className="footer__split">
         <div className="footer__hero-wrap">

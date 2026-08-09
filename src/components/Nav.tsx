@@ -10,14 +10,14 @@ import { PHOTOS } from "@/lib/catalog";
 import Photo from "@/components/Photo";
 
 const MENU_ITEMS = [
-  { label: "WORK", target: "#work", note: "five shelves", thumb: PHOTOS.p12 },
-  { label: "ARCHIVE", target: "#archive", note: "a room of frames", thumb: PHOTOS.p10 },
+  { label: "SIGNATURE", target: "#peak", note: "selected frames", thumb: PHOTOS.p02 },
   { label: "STORY", target: "#story", note: "lagos & ilorin", thumb: PHOTOS.p01 },
+  { label: "SERVICES", target: "#services", note: "what I shoot", thumb: PHOTOS.p04 },
+  { label: "PHOTOGRAPHER", target: "#artist", note: "the man behind the lens", thumb: PHOTOS.artist },
+  { label: "ARCHIVE", target: "#work", note: "five shelves", thumb: PHOTOS.p12 },
   { label: "MAP", target: "#map", note: "where the frames live", thumb: PHOTOS.p14 },
-  { label: "ABOUT", target: "#about", note: "the photographer", thumb: PHOTOS.p22 },
   { label: "PRICING", target: "#pricing", note: "packages from ₦50k", thumb: PHOTOS.p03 },
-  { label: "ARTIST", target: "#artist", note: "the man behind the lens", thumb: PHOTOS.artist },
-  { label: "CONTACT", target: "#contact", note: "let's capture something", thumb: PHOTOS.p02 },
+  { label: "BOOK A SHOOT", target: "#book", note: "let's collaborate", thumb: PHOTOS.p18 },
 ];
 
 function LagosClock() {

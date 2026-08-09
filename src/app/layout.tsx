@@ -89,7 +89,7 @@ const jsonLd = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className="no-js">
+    <html lang="en" className="no-js" suppressHydrationWarning>
       <body>
         {/* set the js flag before paint so the loader can cover first paint */}
         <script

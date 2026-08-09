@@ -54,7 +54,7 @@ export default function FieldMap() {
   return (
     <section className="sec sec--light map" id="map" ref={rootRef} aria-label="Field map">
       <div className="sec__head">
-        <span className="u-kicker">07 - FIELD MAP</span>
+        <span className="u-kicker">09 - FIELD MAP</span>
         <span className="u-mono">WHERE THE FRAMES LIVE</span>
       </div>
 
